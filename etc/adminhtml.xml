@@ -1,0 +1,22 @@
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <themeconfig translate="title" module="cammino_themeconfig">
+                                        <title>themeconfig</title>
+                                        <sort_order>999</sort_order>
+                                    </themeconfig>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cammino_Themeconfig>
+			<version>0.0.1</version>
+		</Cammino_Themeconfig>
+	</modules>
+	<global>
+        <helpers>
+            <themeconfig>
+                <class>Cammino_Themeconfig_Helper</class>
+            </themeconfig>
+        </helpers>
+     </global>
+</config>
