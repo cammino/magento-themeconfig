@@ -1,6 +1,15 @@
 <?php
 class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 {
+	public function getProductAttributesTab(){
+		$attributes = Mage::getStoreConfig('themeconfig/themeconfig_group_product/themeconfig_attributes_tab');
+		if($attributes != null){
+			return explode(",", $attributes);
+		}else{
+			return false;
+		}
+	}
+
 	public function getPhone($type, $indice){
 		$phone = Mage::getStoreConfig('themeconfig/themeconfig_group_phones/themeconfig_'.$type.'_'.$indice);
 		if($phone != null && strlen($phone) > 4){

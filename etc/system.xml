@@ -76,6 +76,30 @@
                     </fields>
                 </themeconfig_group_phones>
             </groups>
+
+            <groups>
+                <themeconfig_group_product translate="label" module="themeconfig">
+                    <label>Página do Produto</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <themeconfig_attributes_tab translate="label">
+                            <label>Aba de atributos</label>
+                            <comment>Slug dos atributos que devem aparecer nas abas (separar atributos por vírgula)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_attributes_tab>
+                    </fields>
+                </themeconfig_group_product>
+            </groups>
+
         </themeconfig>
     </sections>
 </config>
