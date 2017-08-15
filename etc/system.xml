@@ -78,10 +78,40 @@
             </groups>
 
             <groups>
+                <themeconfig_group_mails translate="label" module="themeconfig">
+                    <label>E-mails</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <themeconfig_mail_1 translate="label">
+                            <label>Email 1</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_mail_1>
+                        <themeconfig_mail_2 translate="label">
+                            <label>Email 2</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_mail_2>
+                    </fields>
+                </themeconfig_group_mails>
+            </groups>
+
+            <groups>
                 <themeconfig_group_product translate="label" module="themeconfig">
                     <label>Página do Produto</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>2000</sort_order>
+                    <sort_order>3000</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>

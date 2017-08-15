@@ -23,6 +23,18 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 		}
 	}
 
+	public function getMail($indice){
+		$email = Mage::getStoreConfig('themeconfig/themeconfig_group_mails/themeconfig_mail_' . $indice);
+		if ($email != null){
+			return array(
+				'email' 	=> $email,
+				'indice'	=> $indice
+			);
+		}else{
+			return false;
+		}
+	}
+
 	public function getTelephones(){
 		$telephones = array();
 		if($this->getPhone("telephone", "1")): $telephones[] = $this->getPhone("telephone", "1"); endif;
@@ -32,5 +44,12 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 		if($this->getPhone("whatsapp", "1")): $telephones[] = $this->getPhone("whatsapp", "1"); endif;
 		if($this->getPhone("whatsapp", "2")): $telephones[] = $this->getPhone("whatsapp", "2"); endif;
 		return $telephones;
+	}
+
+	public function getMails(){
+		$emails = array();
+		if($this->getMail("1")): $emails[] = $this->getMail("1"); endif;
+		if($this->getMail("2")): $emails[] = $this->getMail("2"); endif;
+		return $emails;
 	}
 }
