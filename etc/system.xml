@@ -130,6 +130,37 @@
                 </themeconfig_group_product>
             </groups>
 
+            <groups>
+                <themeconfig_group_product_item translate="label" module="themeconfig">
+                    <label>Produto (item)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <themeconfig_product_item_discount_label_before translate="label">
+                            <label>Flag de desconto - Label Antes</label>
+                            <comment>Label que será exibido antes do valor de desconto</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_product_item_discount_label_before>
+                        <themeconfig_product_item_discount_label_after translate="label">
+                            <label>Flag de desconto - Label Depois</label>
+                            <comment>Label que será exibido depois do valor de desconto</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_product_item_discount_label_after>
+                    </fields>
+                </themeconfig_group_product_item>
+            </groups>
+
         </themeconfig>
     </sections>
 </config>
