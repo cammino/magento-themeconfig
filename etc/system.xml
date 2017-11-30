@@ -108,6 +108,53 @@
             </groups>
 
             <groups>
+                <themeconfig_group_social_media translate="label" module="themeconfig">
+                    <label>Redes Sociais</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <facebook translate="label">
+                            <label>Link para Facebook</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook>
+                        <instagram translate="label">
+                            <label>Link para Instagram</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>26</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram>
+                        <youtube translate="label">
+                            <label>Link para Youtube</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>27</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </youtube>
+                        <twitter translate="label">
+                            <label>Link para Twitter</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </twitter>
+                    </fields>
+
+                </themeconfig_group_social_media>
+            </groups>
+
+            <groups>
                 <themeconfig_group_product translate="label" module="themeconfig">
                     <label>Página do Produto</label>
                     <frontend_type>text</frontend_type>
