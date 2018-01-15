@@ -6,6 +6,11 @@
 		</Cammino_Themeconfig>
 	</modules>
 	<global>
+		<blocks>
+			<themeconfig>
+				<class>Cammino_Themeconfig_Block</class>
+			</themeconfig>
+		</blocks>
         <helpers>
             <themeconfig>
                 <class>Cammino_Themeconfig_Helper</class>
