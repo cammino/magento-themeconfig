@@ -7,7 +7,7 @@
                         <children>
                             <config>
                                 <children>
-                                    <themeconfig translate="title" module="cammino_themeconfig">
+                                    <themeconfig translate="title" module="themeconfig">
                                         <title>themeconfig</title>
                                         <sort_order>999</sort_order>
                                     </themeconfig>
