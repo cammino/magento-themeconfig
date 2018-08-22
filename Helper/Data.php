@@ -60,6 +60,7 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 		if($this->hasInstagram()): $medias[] = $this->getInstagram(); endif;
 		if($this->hasTwitter()): $medias[] = $this->getTwitter(); endif;
 		if($this->hasYoutube()): $medias[] = $this->getYoutube(); endif;
+		if($this->hasLinkedin()): $medias[] = $this->getLinkedin(); endif;
 		return $medias;
 	}
 
@@ -95,6 +96,14 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 		);
 	}
 
+	public function getLinkedin(){
+		return array(
+			"url" => Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/linkedin'),
+			"slug" => "linkedin",
+			"label" => "Linkedin",
+		);
+	}
+
 	public function hasFacebook(){
 		$facebook = Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/facebook');
 		return strlen($facebook) > 3;
@@ -113,5 +122,10 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 	public function hasYoutube(){
 		$youtube = Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/youtube');
 		return strlen($youtube) > 3;
+	}
+
+	public function hasLinkedin(){
+		$linkedin = Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/linkedin');
+		return strlen($linkedin) > 3;
 	}
 }

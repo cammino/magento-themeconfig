@@ -8,7 +8,7 @@
     </tabs>
     <sections>
         <themeconfig translate="label" module="themeconfig">
-            <label>Configurações</label>
+            <label>Geral</label>
             <tab>themeconfig</tab>
             <sort_order>1000</sort_order>
             <show_in_default>1</show_in_default>
@@ -55,6 +55,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_telephone_1>
+
                         <themeconfig_telephone_2 translate="label">
                             <label>Telefone 2</label>
                             <frontend_type>text</frontend_type>
@@ -63,6 +64,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_telephone_2>
+
                         <themeconfig_cellphone_1 translate="label">
                             <label>Celular 1</label>
                             <frontend_type>text</frontend_type>
@@ -71,6 +73,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_cellphone_1>
+
                         <themeconfig_cellphone_2 translate="label">
                             <label>Celular 2</label>
                             <frontend_type>text</frontend_type>
@@ -79,6 +82,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_cellphone_2>
+
                         <themeconfig_whatsapp_1 translate="label">
                             <label>Whatsapp 1</label>
                             <frontend_type>text</frontend_type>
@@ -87,6 +91,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_whatsapp_1>
+
                         <themeconfig_whatsapp_2 translate="label">
                             <label>Whatsapp 2</label>
                             <frontend_type>text</frontend_type>
@@ -95,6 +100,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_whatsapp_2>
+
                     </fields>
                 </themeconfig_group_phones>
             </groups>
@@ -117,6 +123,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_mail_1>
+
                         <themeconfig_mail_2 translate="label">
                             <label>Email 2</label>
                             <frontend_type>text</frontend_type>
@@ -125,6 +132,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_mail_2>
+
                     </fields>
                 </themeconfig_group_mails>
             </groups>
@@ -147,6 +155,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </facebook>
+
                         <instagram translate="label">
                             <label>Link para Instagram</label>
                             <frontend_type>text</frontend_type>
@@ -155,6 +164,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </instagram>
+
                         <youtube translate="label">
                             <label>Link para Youtube</label>
                             <frontend_type>text</frontend_type>
@@ -163,6 +173,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </youtube>
+
                         <twitter translate="label">
                             <label>Link para Twitter</label>
                             <frontend_type>text</frontend_type>
@@ -171,6 +182,16 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </twitter>
+
+                        <linkedin translate="label">
+                            <label>Link para Linkedin</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </linkedin>
+
                     </fields>
 
                 </themeconfig_group_social_media>
