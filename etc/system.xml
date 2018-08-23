@@ -16,15 +16,131 @@
             <show_in_store>1</show_in_store>
 
             <groups>
-                <themeconfig_group_scripts translate="label" module="themeconfig">
-                    <label>Scripts (tags)</label>
+                <themeconfig_store_basic_info translate="label" module="themeconfig">
+                    <label>Informações Básicas da loja</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>1000</sort_order>
+                    <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
  
                     <fields>
+                        <themeconfig_store_basic_info_force_update translate="label">
+                            <label>Forçar atualização dos dados no Magento</label>
+                            <comment>Se ativado, as informações da loja serão usadas para atualizar diversos outros campos no Magento</comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_store_basic_info_force_update>
+
+                        <themeconfig_storename translate="label">
+                            <label>Nome da loja</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_storename>
+
+                        <themeconfig_address_street translate="label">
+                            <label>Endereço (Rua)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_address_street>
+
+                        <themeconfig_address_number translate="label">
+                            <label>Endereço (Número)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_address_number>
+
+                        <themeconfig_address_complement translate="label">
+                            <label>Endereço (Complemento)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_address_complement>
+
+                        <themeconfig_address_neighborhood translate="label">
+                            <label>Endereço (Bairro)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_address_neighborhood>
+
+                        <themeconfig_zipcode translate="label">
+                            <label>CEP</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_zipcode>
+
+                        <themeconfig_uf translate="label">
+                            <label>UF</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_uf>
+
+                        <themeconfig_city translate="label">
+                            <label>Cidade</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_city>
+
+                        <themeconfig_working_hours translate="label">
+                            <label>Horário de funcionamento</label>
+                            <comment>Exemplo: Seg a Sex das 9:00 as 18:00 e Sab das 9:00 as 14:00</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_working_hours>
+
+                    </fields>
+                </themeconfig_store_basic_info>
+            </groups>
+
+            <groups>
+                <themeconfig_group_scripts translate="label" module="themeconfig">
+                    <label>Trackings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <themeconfig_trackings_force_update translate="label">
+                            <label>Forçar atualização dos dados no Magento</label>
+                            <comment>Se ativado, os trackings informados abaixo irão sobreescrever as configs dos módulos do Facebook, Gokeep e Google Tag Manager e ativá-los caso tenha informado o pixel ou desativa-los se o pixel estiver vazio</comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_trackings_force_update>
+
                         <themeconfig_googletagmanager translate="label">
                             <label>Google Tag Manager ID</label>
                             <frontend_type>text</frontend_type>
@@ -33,6 +149,24 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_googletagmanager>
+                        
+                        <themeconfig_facebookpixel translate="label">
+                            <label>Facebook Pixel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_facebookpixel>
+
+                        <themeconfig_gokeepstoreid translate="label">
+                            <label>Gokeep Store ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_gokeepstoreid>
                     </fields>
                 </themeconfig_group_scripts>
             </groups>
@@ -41,12 +175,23 @@
                 <themeconfig_group_phones translate="label" module="themeconfig">
                     <label>Telefones</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>1000</sort_order>
+                    <sort_order>20</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
- 
+
                     <fields>
+
+                        <themeconfig_telephones_force_update translate="label">
+                            <label>Forçar atualização dos dados no Magento</label>
+                            <comment>Se ativado, os campos informados nos telefones serão usados para substituir configurações de telefone em outras partes do Magento</comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_telephones_force_update>
+
                         <themeconfig_telephone_1 translate="label">
                             <label>Telefone 1</label>
                             <frontend_type>text</frontend_type>
@@ -109,12 +254,23 @@
                 <themeconfig_group_mails translate="label" module="themeconfig">
                     <label>E-mails</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>2000</sort_order>
+                    <sort_order>30</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
 
                     <fields>
+
+                        <themeconfig_mail_force_update translate="label">
+                            <label>Forçar atualização dos dados no Magento</label>
+                            <comment>O primeiro email será usado como padrão para todos os campos de emails do magento</comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_mail_force_update>
+
                         <themeconfig_mail_1 translate="label">
                             <label>Email 1</label>
                             <frontend_type>text</frontend_type>
@@ -249,6 +405,96 @@
                         </themeconfig_product_item_discount_label_after>
                     </fields>
                 </themeconfig_group_product_item>
+            </groups>
+
+            <!-- <groups>
+                <themeconfig_group_shipping translate="label" module="themeconfig">
+                    <label>Formas de Entrega (Frete)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    
+                    <fields>
+                        <themeconfig_shipping_force_update translate="label">
+                            <label>Forçar atualização dos dados no Magento</label>
+                            <comment>Se ativado, as informações serão usadas para ativar/desativar e configurar os módulos abaixo</comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_shipping_force_update>
+
+                        <themeconfig_shipping_enable_correios translate="label">
+                            <label>Ativar Correios</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </themeconfig_shipping_enable_correios>
+
+                        <themeconfig_shipping_enable_frenet translate="label">
+                            <label>Ativar Frenet</label>
+                            <comment></comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </themeconfig_shipping_enable_frenet>
+
+                    </fields>
+
+                </themeconfig_group_shipping>
+            </groups> -->
+
+            <groups>
+                <themeconfig_group_payment translate="label" module="themeconfig">
+                    <label>Pagamento (Parcelas)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>8000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    
+                    <fields>
+                        <themeconfig_payment_force_update translate="label">
+                            <label>Forçar atualização dos dados no Magento</label>
+                            <comment>Se ativado, as informações serão usadas para definir as configurações de parcelamento</comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_payment_force_update>
+
+                        <themeconfig_payment_max_installments translate="label">
+                            <label>Quantidade máxima de parcelas</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_payment_max_installments>
+
+                        <themeconfig_payment_installments_min_value translate="label">
+                            <label>Valor mínimo da parcela</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_payment_installments_min_value>
+
+                    </fields>
+
+                </themeconfig_group_payment>
             </groups>
 
         </themeconfig>
