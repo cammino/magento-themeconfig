@@ -28,7 +28,8 @@
                         <themeconfig_store_basic_info_force_update translate="label">
                             <label>Forçar atualização dos dados no Magento</label>
                             <comment>Se ativado, as informações da loja serão usadas para atualizar diversos outros campos no Magento</comment>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -134,7 +135,8 @@
                         <themeconfig_trackings_force_update translate="label">
                             <label>Forçar atualização dos dados no Magento</label>
                             <comment>Se ativado, os trackings informados abaixo irão sobreescrever as configs dos módulos do Facebook, Gokeep e Google Tag Manager e ativá-los caso tenha informado o pixel ou desativa-los se o pixel estiver vazio</comment>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -185,7 +187,8 @@
                         <themeconfig_telephones_force_update translate="label">
                             <label>Forçar atualização dos dados no Magento</label>
                             <comment>Se ativado, os campos informados nos telefones serão usados para substituir configurações de telefone em outras partes do Magento</comment>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -264,7 +267,8 @@
                         <themeconfig_mail_force_update translate="label">
                             <label>Forçar atualização dos dados no Magento</label>
                             <comment>O primeiro email será usado como padrão para todos os campos de emails do magento</comment>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -420,7 +424,8 @@
                         <themeconfig_shipping_force_update translate="label">
                             <label>Forçar atualização dos dados no Magento</label>
                             <comment>Se ativado, as informações serão usadas para ativar/desativar e configurar os módulos abaixo</comment>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -467,7 +472,8 @@
                         <themeconfig_payment_force_update translate="label">
                             <label>Forçar atualização dos dados no Magento</label>
                             <comment>Se ativado, as informações serão usadas para definir as configurações de parcelamento</comment>
-                            <frontend_type>checkbox</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>

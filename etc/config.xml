@@ -6,6 +6,11 @@
 		</Cammino_Themeconfig>
 	</modules>
 	<global>
+		<models>
+			<themeconfig>
+				<class>Cammino_Themeconfig_Model</class>
+			</themeconfig>
+		</models>
 		<blocks>
 			<themeconfig>
 				<class>Cammino_Themeconfig_Block</class>
@@ -16,5 +21,16 @@
                 <class>Cammino_Themeconfig_Helper</class>
             </themeconfig>
         </helpers>
+		<events>
+			<admin_system_config_changed_section_themeconfig>
+				<observers>
+                    <themeconfig>
+                        <type>singleton</type>
+                        <class>themeconfig/observer</class>
+                        <method>saveSettings</method>
+                    </themeconfig>
+                </observers>
+			</admin_system_config_changed_section_themeconfig>
+		</events>
      </global>
 </config>
