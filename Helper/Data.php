@@ -233,4 +233,24 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			case "default": return ""; break;
 		}
 	}
+
+	function getAllGroups() {
+		$groupsArray = Mage::getModel('customer/group')
+        ->getCollection()
+        ->load()
+        ->toArray();
+ 
+        foreach ($groupsArray['items'] as $groupId => $group) {
+        	if (isset($group['customer_group_id'])) {
+                
+                $groupName = $group['customer_group_code'];
+                $groups[] = array(
+                    'value' => $groupId,
+                    'label' => $groupName
+                );
+            }
+        }
+
+        return $groups;
+	}
 }
