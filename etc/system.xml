@@ -297,6 +297,7 @@
                 </themeconfig_group_mails>
             </groups>
 
+            <!-- Redes Sociais -->
             <groups>
                 <themeconfig_group_social_media translate="label" module="themeconfig">
                     <label>Redes Sociais</label>
@@ -356,12 +357,55 @@
 
                 </themeconfig_group_social_media>
             </groups>
+            <!-- / Redes Sociais -->
+
+            <!-- WhatsApp Widget -->
+            <groups>
+                <themeconfig_whatsapp_widget translate="label" module="themeconfig">
+                    <label>WhatsApp Widget</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <whatsapp_force_update translate="label">
+                            <label>Exibir o widget do WhatsApp</label>
+                            <comment>Se sim, o botão para contato do WhatsApp aparecerá na home do site.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </whatsapp_force_update>
+                        <whatsapp_number translate="label">
+                            <label>Número do WhatsApp</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </whatsapp_number>
+                        <whatsapp_text translate="label">
+                            <label>Mensagem do WhatsApp</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </whatsapp_text>
+                    </fields>
+                </themeconfig_whatsapp_widget>
+            </groups>
+            <!-- / WhatsApp Widget -->
 
             <groups>
                 <themeconfig_group_product translate="label" module="themeconfig">
                     <label>Página do Produto</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>3000</sort_order>
+                    <sort_order>4000</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -384,7 +428,7 @@
                 <themeconfig_group_product_item translate="label" module="themeconfig">
                     <label>Produto (item)</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>4000</sort_order>
+                    <sort_order>5000</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -463,7 +507,7 @@
                 <themeconfig_group_payment translate="label" module="themeconfig">
                     <label>Pagamento (Parcelas)</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>8000</sort_order>
+                    <sort_order>6000</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>

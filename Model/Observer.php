@@ -58,7 +58,7 @@ class Cammino_Themeconfig_Model_Observer extends Mage_GoogleAnalytics_Model_Obse
             $this->settings->saveEmails();
         }
 
-        Mage::getModel('core/config')->saveConfig($configName, "0");
+        Mage::getModel('core/config')->saveConfig( $configName, "0" );
     }
     
     /**
