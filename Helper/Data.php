@@ -255,4 +255,22 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 
         return $groups;
 	}
+
+	/**
+	* Pega as informações de endereço da Loja
+	* @return array com as informações (slug, label) cadastradas do CNPJ
+	*/
+	public function getAddress(){
+		return $infos = array(
+			"storename" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_storename'),
+			"cnpj" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_cnpj'),
+			"street" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_address_street'),
+			"number" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_address_number'),
+			"complement" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_address_complement'),
+			"neighborhood" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_address_neighborhood'),
+			"zipcode" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_zipcode'),
+			"uf" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_uf'),
+			"city" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_city')
+		);
+	}
 }
