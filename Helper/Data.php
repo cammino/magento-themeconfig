@@ -28,6 +28,8 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 				'type'		=> $type,
 				'indice'	=> $indice
 			);
+
+			return $x;
 		}else{
 			return false;
 		}
