@@ -273,4 +273,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"city" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_city')
 		);
 	}
+
+	/**
+	* Retorna as informações do horário de atendimento da loja
+	* @return string
+	*/
+	public function getWorkingHours() {
+		$hours = Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_working_hours');
+		return strlen($hours) > 5 ? $hours : "";
+	}
 }
