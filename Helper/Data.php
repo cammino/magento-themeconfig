@@ -282,4 +282,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$hours = Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_working_hours');
 		return strlen($hours) > 5 ? $hours : "";
 	}
+
+	/** 
+	 * Retorna o tema selecionado para a imagem do produto
+	 * @return string
+	 */
+	public function getProductImageTheme() {
+		$theme = Mage::getStoreConfig('themeconfig_design/product/image_theme');
+		return $theme != NULL && strlen($theme) > 4 ? $theme . '-theme' : "default-theme";
+	}
 }
