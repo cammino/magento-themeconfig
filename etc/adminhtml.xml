@@ -11,6 +11,10 @@
                                         <title>themeconfig</title>
                                         <sort_order>999</sort_order>
                                     </themeconfig>
+                                    <themeconfig_design module="themeconfig">
+                                        <title>themeconfig</title>
+                                        <sort_order>1000</sort_order>
+                                    </themeconfig_design>
                                 </children>
                             </config>
                         </children>
