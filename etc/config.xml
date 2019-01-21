@@ -31,6 +31,15 @@
                     </themeconfig>
                 </observers>
 			</admin_system_config_changed_section_themeconfig>
+			<controller_action_predispatch_customer_account_login>
+                <observers>
+                    <redirectproductpage>
+                        <type>model</type>
+                        <class>Cammino_Themeconfig_Model_Observer</class>
+                        <method>redirectProductPage</method>
+                    </redirectproductpage>
+                </observers>
+            </controller_action_predispatch_customer_account_login>
 		</events>
      </global>
 </config>

@@ -88,4 +88,16 @@ class Cammino_Themeconfig_Model_Observer extends Mage_GoogleAnalytics_Model_Obse
 
         Mage::getModel('core/config')->saveConfig($configName, "0");
     }
+
+    public function redirectProductPage(Varien_Event_Observer $observer) {
+        $redirect = Mage::app()->getRequest()->getParam('redirect_product');
+        if (!empty($redirect)) {    
+            $urldecode = urldecode($redirect);
+            $base64reverse = base64_decode($urldecode);
+            $pos = strpos($base64reverse, Mage::getBaseUrl());
+            if ($pos === 0){
+                Mage::getSingleton('customer/session')->setBeforeAuthUrl($base64reverse);
+           }
+       }
+    }
 }
