@@ -46,7 +46,7 @@
                         </themeconfig_storename>
 
                         <themeconfig_cnpj translate="label">
-                            <label>CNPJ</label>
+                            <label>CPF/CNPJ</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
