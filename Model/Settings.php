@@ -92,6 +92,21 @@ class Cammino_Themeconfig_Model_Settings extends Mage_Core_Model_Abstract {
 		$hour = $this->getConfig("themeconfig_store_basic_info/themeconfig_working_hours");
 
 		if($storeName) {
+
+			$page = Mage::getModel('cms/page')
+			    ->load('home', 'identifier');
+
+			$pageData = array(
+			    'title' => $storeName,
+			    'root_template' => 'one_column',
+			    'identifier' => 'home',
+			    'stores' => array(1),
+			    'page_id' => $page->getId()
+			);
+
+$page->setData($pageData)
+    ->save();
+
 			// Sistema > Geral > Geral > Informações sobre a loja > Loja
 			$this->setConfig("store_information/name", $storeName , "general");
 			
