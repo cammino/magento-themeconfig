@@ -36,6 +36,12 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract
 		}
 	}
 
+	public function getTelephone(){
+		$telephones = array();
+		if($this->getPhone("telephone", "1")): $telephones[] = $this->getPhone("telephone", "1"); endif;
+		return $telephones;
+	}
+
 	public function getTelephones(){
 		$telephones = array();
 		if($this->getPhone("telephone", "1")): $telephones[] = $this->getPhone("telephone", "1"); endif;
