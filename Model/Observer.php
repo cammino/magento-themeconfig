@@ -71,6 +71,7 @@ class Cammino_Themeconfig_Model_Observer extends Mage_GoogleAnalytics_Model_Obse
         if(Mage::getStoreConfig($configName) == "1") {
             $this->settings->saveTrackingFacebookPixelId();
             $this->settings->saveTrackingGokeep();
+            $this->settings->saveTrackingGoogleAnalytics();
         }
 
         Mage::getModel('core/config')->saveConfig($configName, "0");

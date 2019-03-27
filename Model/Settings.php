@@ -74,8 +74,6 @@ class Cammino_Themeconfig_Model_Settings extends Mage_Core_Model_Abstract {
 			$this->log("Desativou o tracking do Gokeep");
 		}
 	}
-	
-	
 	/**
 	* Salva informações básicas da loja no Magento
 	* @return void
@@ -253,6 +251,21 @@ $page->setData($pageData)
 			
 			// Sistema > Geral > Emails de Contato > Personalizado 2 > Nome do Remetente
 			$this->setConfig("ident_custom2/name", $storeName , "trans_email");
+		}
+	}
+
+	/**
+	* Salva o ID do Google Analytics
+	* @return void
+	*/
+	public function saveTrackingGoogleAnalytics() {
+		$ga = $this->getConfig("themeconfig_group_scripts/themeconfig_googleanalyticsid");
+		
+		if ($ga != "") {
+			// Sistema > Configurações > Vendas > API Do Google > Google Analytics
+			$this->setConfig("analytics/active", 1 , "google");
+			$this->setConfig("analytics/account", $ga , "google");
+			
 		}
 	}
 }
