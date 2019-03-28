@@ -297,4 +297,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$theme = Mage::getStoreConfig('themeconfig_design/product/image_theme');
 		return $theme != NULL && strlen($theme) > 4 ? $theme . '-theme' : "default-theme";
 	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 1 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis1(){
+		$frete1 = Mage::getStoreConfig('themeconfig/themeconfig_themeconfig_group_frete/frete1_area');
+		return strlen($frete1) > 3;
+	}
 }
