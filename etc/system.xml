@@ -669,7 +669,7 @@
                     <show_in_store>1</show_in_store>                    
                     <fields>
                         <frete1_active translate="label">
-                            <label>Frete 1 - Ativo?</label>
+                            <label>Frete 1 - Habilitado</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>10</sort_order>
@@ -710,37 +710,37 @@
                         </frete1_ceps>
                     </fields>
                     <fields>
-                        <themeconfig_frete_frete2_active translate="label">
-                            <label>Frete 2 - Ativo?</label>
+                        <frete2_active translate="label">
+                            <label>Frete 2 - Habilitado</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </themeconfig_frete_frete2_active>
+                        </frete2_active>
 
-                        <themeconfig_frete_frete2_area translate="label">
+                        <frete2_area translate="label">
                             <label>Frete 2 - Nome da área</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>21</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete2_active>1</themeconfig_frete_frete2_active></depends>
-                        </themeconfig_frete_frete2_area>
+                            <depends><frete2_active>1</frete2_active></depends>
+                        </frete2_area>
 
-                        <themeconfig_frete_frete2_minval translate="label">
+                        <frete2_minval translate="label">
                             <label>Frete 2 - Valor mínimo</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>22</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete2_active>1</themeconfig_frete_frete2_active></depends>
-                        </themeconfig_frete_frete2_minval>
+                            <depends><frete2_active>1</frete2_active></depends>
+                        </frete2_minval>
 
-                        <themeconfig_frete_frete2_ceps translate="label">
+                        <frete2_ceps translate="label">
                             <label>Frete 2 - Faixas de cep</label>
                             <comment>Informe as faixas de cep, separando-as por vírgula.</comment>
                             <frontend_type>text</frontend_type>
@@ -748,41 +748,41 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete2_active>1</themeconfig_frete_frete2_active></depends>
-                        </themeconfig_frete_frete2_ceps>
+                            <depends><frete2_active>1</frete2_active></depends>
+                        </frete2_ceps>
                     </fields>
                     <fields>
-                        <themeconfig_frete_frete3_active translate="label">
-                            <label>Frete 3 - Ativo?</label>
+                        <frete3_active translate="label">
+                            <label>Frete 3 - Habilitado</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </themeconfig_frete_frete3_active>
+                        </frete3_active>
 
-                        <themeconfig_frete_frete3_area translate="label">
+                        <frete3_area translate="label">
                             <label>Frete 3 - Nome da área</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>31</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete3_active>1</themeconfig_frete_frete3_active></depends>
-                        </themeconfig_frete_frete3_area>
+                            <depends><frete3_active>1</frete3_active></depends>
+                        </frete3_area>
 
-                        <themeconfig_frete_frete3_minval translate="label">
+                        <frete3_minval translate="label">
                             <label>Frete 3 - Valor mínimo</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>32</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete3_active>1</themeconfig_frete_frete3_active></depends>
-                        </themeconfig_frete_frete3_minval>
+                            <depends><frete3_active>1</frete3_active></depends>
+                        </frete3_minval>
 
-                        <themeconfig_frete_frete3_ceps translate="label">
+                        <frete3_ceps translate="label">
                             <label>Frete 3 - Faixas de cep</label>
                             <comment>Informe as faixas de cep, separando-as por vírgula.</comment>
                             <frontend_type>text</frontend_type>
@@ -790,41 +790,41 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete3_active>1</themeconfig_frete_frete3_active></depends>
-                        </themeconfig_frete_frete3_ceps>
+                            <depends><frete3_active>1</frete3_active></depends>
+                        </frete3_ceps>
                     </fields>
                     <fields>
-                        <themeconfig_frete_frete4_active translate="label">
-                            <label>Frete 4 - Ativo?</label>
+                        <frete4_active translate="label">
+                            <label>Frete 4 - Habilitado</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </themeconfig_frete_frete4_active>
+                        </frete4_active>
 
-                        <themeconfig_frete_frete4_area translate="label">
+                        <frete4_area translate="label">
                             <label>Frete 4 - Nome da área</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>41</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete4_active>1</themeconfig_frete_frete4_active></depends>
-                        </themeconfig_frete_frete4_area>
+                            <depends><frete4_active>1</frete4_active></depends>
+                        </frete4_area>
 
-                        <themeconfig_frete_frete4_minval translate="label">
+                        <frete4_minval translate="label">
                             <label>Frete 4 - Valor mínimo</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>42</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete4_active>1</themeconfig_frete_frete4_active></depends>
-                        </themeconfig_frete_frete4_minval>
+                            <depends><frete4_active>1</frete4_active></depends>
+                        </frete4_minval>
 
-                        <themeconfig_frete_frete4_ceps translate="label">
+                        <frete4_ceps translate="label">
                             <label>Frete 4 - Faixas de cep</label>
                             <comment>Informe as faixas de cep, separando-as por vírgula.</comment>
                             <frontend_type>text</frontend_type>
@@ -832,41 +832,41 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete4_active>1</themeconfig_frete_frete4_active></depends>
-                        </themeconfig_frete_frete4_ceps>
+                            <depends><frete4_active>1</frete4_active></depends>
+                        </frete4_ceps>
                     </fields>
                     <fields>
-                        <themeconfig_frete_frete5_active translate="label">
-                            <label>Frete 5 - Ativo?</label>
+                        <frete5_active translate="label">
+                            <label>Frete 5 - Habilitado</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </themeconfig_frete_frete5_active>
+                        </frete5_active>
 
-                        <themeconfig_frete_frete5_area translate="label">
+                        <frete5_area translate="label">
                             <label>Frete 5 - Nome da área</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>51</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete5_active>1</themeconfig_frete_frete5_active></depends>
-                        </themeconfig_frete_frete5_area>
+                            <depends><frete5_active>1</frete5_active></depends>
+                        </frete5_area>
 
-                        <themeconfig_frete_frete5_minval translate="label">
+                        <frete5_minval translate="label">
                             <label>Frete 5 - Valor mínimo</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>52</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete5_active>1</themeconfig_frete_frete5_active></depends>
-                        </themeconfig_frete_frete5_minval>
+                            <depends><frete5_active>1</frete5_active></depends>
+                        </frete5_minval>
 
-                        <themeconfig_frete_frete5_ceps translate="label">
+                        <frete5_ceps translate="label">
                             <label>Frete 5 - Faixas de cep</label>
                             <comment>Informe as faixas de cep, separando-as por vírgula.</comment>
                             <frontend_type>text</frontend_type>
@@ -874,8 +874,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <depends><themeconfig_frete_frete5_active>1</themeconfig_frete_frete5_active></depends>
-                        </themeconfig_frete_frete5_ceps>
+                            <depends><frete5_active>1</frete5_active></depends>
+                        </frete5_ceps>
                     </fields>
                 </themeconfig_group_frete>
             </groups>
