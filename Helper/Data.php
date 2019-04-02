@@ -297,4 +297,17 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$theme = Mage::getStoreConfig('themeconfig_design/product/image_theme');
 		return $theme != NULL && strlen($theme) > 4 ? $theme . '-theme' : "default-theme";
 	}
+
+	/**
+	* Pega as informações do Instagram Widget
+	* @return array com as informações (status, userid, token e title) cadastradas
+	*/
+	public function getInstagramInfos(){
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_force_update'),
+			"userid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_user'),
+			"token" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_token'),
+			"title" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_text')
+		);
+	}
 }
