@@ -302,6 +302,34 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	* Verifica se tem informações para a Regra de Frete Grátis 1 cadastradas na loja
 	* @return boolean se esta cadastrado ou não
 	*/
+	public function hasFreteGratis(){
+		for ($i = 1; $i <= 5; $i++) {
+			$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_active');	
+
+			if ( $status == 1 || $status == '1' ) {		
+				$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_area');
+				$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_minval');
+				$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_ceps');
+
+				if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+					$freteOptions[] = array(
+						'status' => $status,
+						'area' => $area,
+						'minval' => $minval,
+						'halfval' => $minval / 2,
+						'ceps' => $ceps
+					);
+				}
+			}			
+		}
+		
+		return $freteOptions;
+	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 1 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
 	public function hasFreteGratis1(){
 		$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_active');
 
