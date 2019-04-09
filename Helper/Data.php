@@ -310,4 +310,19 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"title" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_text')
 		);
 	}
+
+	/**
+	* Verifica se o widget de comentários para o produto no Facebook, está habilitado
+	* @return boolean se esta habilitado ou não
+	*/
+	public function hasFacebookComments(){
+		$status = Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_force_update');
+
+		if ( $status == '1' || $status == 1 ) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
