@@ -489,6 +489,14 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </facebook_chat_force_update>
+                        <facebook_chat_text translate="label">
+                            <label>Título da seção</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_chat_text>
                     </fields>
                 </facebook_chat_widget>
             </groups>

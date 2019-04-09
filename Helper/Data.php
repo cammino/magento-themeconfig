@@ -316,13 +316,9 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	* @return boolean se esta habilitado ou não
 	*/
 	public function hasFacebookComments(){
-		$status = Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_force_update');
-
-		if ( $status == '1' || $status == 1 ) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_force_update'),
+			"title" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_text')
+		);
 	}
 }
