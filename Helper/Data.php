@@ -302,7 +302,7 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	* Pega as informações do Instagram Widget
 	* @return array com as informações (status, userid, token e title) cadastradas
 	*/
-	public function getInstagramInfos(){
+	public function getInstagramInfos() {
 		return array(
 			"status" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_force_update'),
 			"userid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_user'),
@@ -315,10 +315,19 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	* Verifica se o widget de comentários para o produto no Facebook, está habilitado
 	* @return boolean se esta habilitado ou não
 	*/
-	public function hasFacebookComments(){
+	public function hasFacebookComments() {
 		return array(
 			"status" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_force_update'),
 			"title" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_text')
 		);
+	}
+	
+	/**
+	* Function responsible for returning the quantity of items per line
+	* @return string
+	*/
+	public function getProductListQtyItemsPerLine() {
+		$qty = intval(Mage::getStoreConfig('themeconfig_design/product_list/qty_per_line'));
+		return $qty == 0 || $qty == 1 ? 3 : $qty;
 	}
 }
