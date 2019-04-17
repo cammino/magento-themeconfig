@@ -330,4 +330,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$qty = intval(Mage::getStoreConfig('themeconfig_design/product_list/qty_per_line'));
 		return $qty == 0 || $qty == 1 ? 3 : $qty;
 	}
+	
+	/**
+	* Function responsible for returning the quantity of items per line mobile
+	* @return string
+	*/
+	public function getProductListQtyItemsPerLineMobile() {
+		$qty = intval(Mage::getStoreConfig('themeconfig_design/product_list/qty_per_line_mobile'));
+		return $qty == 1 ? 1 : 2;
+	}
 }
