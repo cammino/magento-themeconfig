@@ -339,4 +339,157 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$qty = intval(Mage::getStoreConfig('themeconfig_design/product_list/qty_per_line_mobile'));
 		return $qty == 1 ? 1 : 2;
 	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 1 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis(){
+		for ($i = 1; $i <= 5; $i++) {
+			$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_active');	
+
+			if ( $status == 1 || $status == '1' ) {		
+				$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_area');
+				$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_minval');
+				$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_ceps');
+
+				if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+					$freteOptions[] = array(
+						'status' => $status,
+						'area' => $area,
+						'minval' => $minval,
+						'halfval' => $minval / 2,
+						'ceps' => $ceps
+					);
+				}
+			}			
+		}
+		
+		return $freteOptions;
+	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 1 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis1(){
+		$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_active');
+
+		if ( $status == 1 || $status == '1' ) {
+			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_area');
+			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_minval');
+			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_ceps');
+
+			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+				return array(
+					"area" => $area,
+					"minval" => $minval,
+					"ceps" => $ceps,
+				);
+			}
+		}
+		else {
+			return false;
+		}
+	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 2 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis2(){
+		$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_active');
+
+		if ( $status == 1 || $status == '1' ) {
+			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_area');
+			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_minval');
+			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_ceps');
+
+			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+				return array(
+					"area" => $area,
+					"minval" => $minval,
+					"ceps" => $ceps,
+				);
+			}
+		}
+		else {
+			return false;
+		}
+	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 3 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis3(){
+		$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_active');
+
+		if ( $status == 1 || $status == '1' ) {
+			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_area');
+			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_minval');
+			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_ceps');
+
+			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+				return array(
+					"area" => $area,
+					"minval" => $minval,
+					"ceps" => $ceps,
+				);
+			}
+		}
+		else {
+			return false;
+		}
+	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 4 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis4(){
+		$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_active');
+
+		if ( $status == 1 || $status == '1' ) {
+			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_area');
+			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_minval');
+			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_ceps');
+
+			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+				return array(
+					"area" => $area,
+					"minval" => $minval,
+					"ceps" => $ceps,
+				);
+			}
+		}
+		else {
+			return false;
+		}
+	}
+
+	/**
+	* Verifica se tem informações para a Regra de Frete Grátis 5 cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasFreteGratis5(){
+		$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_active');
+
+		if ( $status == 1 || $status == '1' ) {
+			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_area');
+			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_minval');
+			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_ceps');
+
+			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+				return array(
+					"area" => $area,
+					"minval" => $minval,
+					"ceps" => $ceps,
+				);
+			}
+		}
+		else {
+			return false;
+		}
+	}
 }
