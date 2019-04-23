@@ -1026,6 +1026,15 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </qty_per_line_mobile>
+                        <product_image_height_vertical_theme>
+                            <label>Altura da imagem (vertical theme)</label>
+                            <comment>Altura padrão: 600 (pixels)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_image_height_vertical_theme>
                     </fields>
                 </product_list>
             </groups>

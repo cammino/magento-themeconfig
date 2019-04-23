@@ -492,4 +492,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			return false;
 		}
 	}
+
+	/**
+	* Retorna a altura da imagem dos produtos nas listagem quando é o vertical theme
+	* @return int
+	*/
+	public function getProductImageVerticalThemeHeight() {
+		$height = intval(Mage::getStoreConfig('themeconfig_design/product_list/product_image_height_vertical_theme'));
+		return $height < 100 ? 600 : $height;
+	}
 }
