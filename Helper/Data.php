@@ -281,6 +281,17 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	}
 
 	/**
+	* Retorna as informações do tempo do autoplay dos banners principais
+	* @return string
+	*/
+	public function getBannerAutoplay() {
+		return $time = array (
+			"bannertime" => Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_banner_time'),
+			"forceupdate" => Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_banner_force_update')
+		);
+	}
+
+	/**
 	* Retorna as informações do horário de atendimento da loja
 	* @return string
 	*/
