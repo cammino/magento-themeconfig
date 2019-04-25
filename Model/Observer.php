@@ -101,4 +101,12 @@ class Cammino_Themeconfig_Model_Observer extends Mage_GoogleAnalytics_Model_Obse
            }
        }
     }
+
+    /**
+	* Click do botão do instagram widget
+	* @return void
+	*/
+    public function connectForInstagramWidget() {
+        var_dump('Entrou maluco do céu');
+    }
 }
