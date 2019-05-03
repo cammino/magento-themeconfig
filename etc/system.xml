@@ -978,24 +978,25 @@
                         <show_in_store>1</show_in_store>
 
                         <fields>
-                            <themeconfig_banner_force_update translate="label">
-                                <label>Habilitar Autoplay dos Banners principais</label>
+                            <themeconfig_fullbanners_autoplay translate="label">
+                                <label>Habilitar autoplay</label>
                                 <frontend_type>select</frontend_type>
                                 <source_model>adminhtml/system_config_source_yesno</source_model>
                                 <sort_order>0</sort_order>
                                 <show_in_default>1</show_in_default>
                                 <show_in_website>1</show_in_website>
                                 <show_in_store>1</show_in_store>
-                            </themeconfig_banner_force_update>
+                            </themeconfig_fullbanners_autoplay>
 
-                            <themeconfig_banner_time translate="label">
-                                <label>Tempo de transação automatica dos Banners</label>
+                            <themeconfig_fullbanners_speed translate="label">
+                                <label>Tempo de transição</label>
+                                <comment>Tempo em segundos (o autoplay deve estar ativo)</comment>
                                 <frontend_type>text</frontend_type>
                                 <sort_order>25</sort_order>
                                 <show_in_default>1</show_in_default>
                                 <show_in_website>1</show_in_website>
                                 <show_in_store>1</show_in_store>
-                            </themeconfig_banner_time>
+                            </themeconfig_fullbanners_speed>
                         </fields>
                     </themeconfig_group_banners>
                 </groups>

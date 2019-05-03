@@ -281,14 +281,22 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	}
 
 	/**
-	* Retorna as informações do tempo do autoplay dos banners principais
+	* Retorna se o Fullbanner tem autoplay (default = ativado)
 	* @return string
 	*/
-	public function getBannerAutoplay() {
-		return $time = array (
-			"bannertime" => Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_banner_time'),
-			"forceupdate" => Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_banner_force_update')
-		);
+	public function getFullbannersAutoplay() {
+		$enable = Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_fullbanners_autoplay');
+		return $enable == "0" ? 'false' : 'true';
+	}
+	
+	/**
+	* Retorna o tempo de transição entre as imagens do Fullbanner (default = 8 segs)
+	* @return int
+	*/
+	public function getFullbannersSpeed() {
+		$time = intval(Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_fullbanners_speed'));
+		$time = $time <= 2 ? 8 : $time;
+		return $time * 1000;
 	}
 
 	/**
