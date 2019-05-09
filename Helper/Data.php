@@ -304,6 +304,8 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	*/
 	public function getInstagramInfos() {
 		return array(
+			"clientid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_clientid'),
+			"clientsecret" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_clientsecret'),
 			"status" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_force_update'),
 			"userid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_user'),
 			"token" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_token'),

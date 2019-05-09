@@ -27,7 +27,8 @@ class Cammino_Themeconfig_Block_Adminhtml_System_Config_Form_Button extends Mage
     protected function _construct()
     {
         parent::_construct();
-        $this->setTemplate('cammino/themeconfig/system/config/button.phtml');
+        $this->setTemplate('themeconfig/button.phtml');
+        // $this->setTemplate('cammino/themeconfig/system/config/button.phtml');
     }
 
     /**
@@ -48,7 +49,7 @@ class Cammino_Themeconfig_Block_Adminhtml_System_Config_Form_Button extends Mage
      */
     public function getAjaxCheckUrl()
     {
-        return Mage::helper('adminhtml')->getUrl('adminhtml/adminhtml_atwixtweaks/check');
+        return Mage::helper('adminhtml')->getUrl('adminhtml/adminhtml_themeconfig/check');
     }
 
     /**

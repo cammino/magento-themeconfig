@@ -4,6 +4,7 @@ class Cammino_Themeconfig_Model_Source_Instagram_Connect extends Mage_Adminhtml_
     
     // Cliente ID - 14c6a7f493594e21900e25bdf2fcd3a2
     // Client Secret - b95af8683ff6458c9099729bcd5efe32
+    // Code - 24484ad828f348b29ba12566f47ee4b3
 
     private $settings;
 
