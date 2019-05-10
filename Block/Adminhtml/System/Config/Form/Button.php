@@ -1,6 +1,6 @@
 <?php
 /**
- * Atwix
+ * Cammino Themeconfig
  *
  * NOTICE OF LICENSE
  *
@@ -12,17 +12,17 @@
  * obtain it through the world-wide-web, please send an email
  * to license@magentocommerce.com so we can send you a copy immediately.
 
- * @category    Atwix Mod
- * @package     Atwix_Tweaks
- * @author      Atwix Core Team
- * @copyright   Copyright (c) 2012 Atwix (http://www.atwix.com)
+ * @category    Cammino Mod
+ * @package     Camminostore_Themeconfig
+ * @author      Cammino Digital
+ * @copyright   Copyright (c) 2019 Cammino Digital (http://www.cammino.digital)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Cammino_Themeconfig_Block_Adminhtml_System_Config_Form_Button extends Mage_Adminhtml_Block_System_Config_Form_Field
 {
     /*
-     * Set template
+     * Set button template
      */
     protected function _construct()
     {
