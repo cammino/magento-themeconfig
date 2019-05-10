@@ -28,7 +28,6 @@ class Cammino_Themeconfig_Block_Adminhtml_System_Config_Form_Button extends Mage
     {
         parent::_construct();
         $this->setTemplate('themeconfig/button.phtml');
-        // $this->setTemplate('cammino/themeconfig/system/config/button.phtml');
     }
 
     /**
@@ -40,32 +39,5 @@ class Cammino_Themeconfig_Block_Adminhtml_System_Config_Form_Button extends Mage
     protected function _getElementHtml(Varien_Data_Form_Element_Abstract $element)
     {
         return $this->_toHtml();
-    }
-
-    /**
-     * Return ajax url for button
-     *
-     * @return string
-     */
-    public function getAjaxCheckUrl()
-    {
-        return Mage::helper('adminhtml')->getUrl('adminhtml/adminhtml_themeconfig/check');
-    }
-
-    /**
-     * Generate button html
-     *
-     * @return string
-     */
-    public function getButtonHtml()
-    {
-        $button = $this->getLayout()->createBlock('adminhtml/widget_button')
-            ->setData(array(
-            'id'        => 'atwixtweaks_button',
-            'label'     => $this->helper('adminhtml')->__('Check'),
-            'onclick'   => 'javascript:check(); return false;'
-        ));
-
-        return $button->toHtml();
     }
 }
