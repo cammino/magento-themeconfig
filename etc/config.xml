@@ -40,6 +40,15 @@
                     </redirectproductpage>
                 </observers>
             </controller_action_predispatch_customer_account_login>
+			<controller_action_postdispatch_cms_index_index>
+				<observers>
+                    <themeconfig>
+                        <type>singleton</type>
+                        <class>themeconfig/observer</class>
+                        <method>connectForInstagramWidget</method>
+                    </themeconfig>
+                </observers>
+			</controller_action_postdispatch_cms_index_index>
 		</events>
      </global>
 </config>

@@ -268,4 +268,15 @@ $page->setData($pageData)
 			
 		}
 	}
+
+	/**
+	* Atualiza as informações do Instagram Widget
+	* @return void
+	*/
+	public function saveInstagramWidgetValues($user_id, $access_token) {
+		if ($user_id != "" && $access_token != null) {
+			$this->setConfig("instagram_widget/instagram_user", $user_id, "themeconfig");
+			$this->setConfig("instagram_widget/instagram_token", $access_token, "themeconfig");
+		}
+	}
 }
