@@ -522,4 +522,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$height = intval(Mage::getStoreConfig('themeconfig_design/product_list/product_image_height_vertical_theme'));
 		return $height < 100 ? 600 : $height;
 	}
+
+	/** 
+	 * Retorna o tema selecionado para o header do projeto
+	 * @return string
+	 */
+	public function getHeaderModel() {
+		$theme = Mage::getStoreConfig('themeconfig_design/header_model/header_style');
+		return $theme != NULL && strlen($theme) > 4 ? $theme . '-header' : "default-header";
+	}
 }
