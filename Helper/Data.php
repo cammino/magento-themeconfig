@@ -342,6 +342,18 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"title" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_text')
 		);
 	}
+
+	/**
+	* Verifica se o widget do Facebook Messenger, está habilitado
+	* @return boolean se esta habilitado ou não
+	*/
+	public function hasFacebookMessenger() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig/facebook_messenger_widget/facebook_messenger_force_update'),
+			"id" => Mage::getStoreConfig('themeconfig/facebook_messenger_widget/facebook_messenger_id'),
+			"message" => Mage::getStoreConfig('themeconfig/facebook_messenger_widget/facebook_messenger_greetings')
+		);
+	}
 	
 	/**
 	* Function responsible for returning the quantity of items per line
