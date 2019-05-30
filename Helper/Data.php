@@ -269,6 +269,9 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	public function getAddress(){
 		return $infos = array(
 			"storename" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_storename'),
+			"hometitle" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_hometitle'),
+			"sufixtitle" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_sufixtitle'),
+			"razaosocial" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_razaosocial'),
 			"cnpj" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_cnpj'),
 			"street" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_address_street'),
 			"number" => Mage::getStoreConfig('themeconfig/themeconfig_store_basic_info/themeconfig_address_number'),

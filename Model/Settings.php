@@ -80,6 +80,8 @@ class Cammino_Themeconfig_Model_Settings extends Mage_Core_Model_Abstract {
 	*/
 	public function saveBasicInformation() {
 		$storeName = $this->getConfig("themeconfig_store_basic_info/themeconfig_storename");
+		$homeTitle = $this->getConfig("themeconfig_store_basic_info/themeconfig_hometitle");
+		$sufixTitle = $this->getConfig("themeconfig_store_basic_info/themeconfig_sufixtitle");
 		$addressStreet = $this->getConfig("themeconfig_store_basic_info/themeconfig_address_street");
 		$addressNumber = $this->getConfig("themeconfig_store_basic_info/themeconfig_address_number");
 		$addressComplement = $this->getConfig("themeconfig_store_basic_info/themeconfig_address_complement");
@@ -95,15 +97,15 @@ class Cammino_Themeconfig_Model_Settings extends Mage_Core_Model_Abstract {
 			    ->load('home', 'identifier');
 
 			$pageData = array(
-			    'title' => $storeName,
+			    'title' => $homeTitle != null ? $homeTitle : $storeName,
 			    'root_template' => 'one_column',
 			    'identifier' => 'home',
 			    'stores' => array(1),
 			    'page_id' => $page->getId()
 			);
 
-$page->setData($pageData)
-    ->save();
+			$page->setData($pageData)
+				->save();
 
 			// Sistema > Geral > Geral > Informações sobre a loja > Loja
 			$this->setConfig("store_information/name", $storeName , "general");
@@ -112,13 +114,18 @@ $page->setData($pageData)
 			$this->setConfig("head/default_title", $storeName , "design");
 			
 			// Sistema > Geral > Visual > Cabeçalho HTML > Sufixo de Título
-			$this->setConfig("head/title_suffix", " | " . $storeName , "design");
+			if ( $sufixTitle ) {
+				$this->setConfig("head/title_suffix", " | " . $sufixTitle , "design");
+			}
+			else {
+				$this->setConfig("head/title_suffix", " | " . $storeName , "design");
+			}
 			
 			// Sistema > Geral > Visual > Cabeçalho HTML > Descrição padrão
-			$this->setConfig("head/default_description", $storeName , "design");
+			// $this->setConfig("head/default_description", $storeName , "design");
 			
 			// Sistema > Geral > Visual > Cabeçalho HTML > Palavras-Chaves Padrão
-			$this->setConfig("head/default_keywords", $storeName , "design");
+			// $this->setConfig("head/default_keywords", $storeName , "design");
 			
 			// Sistema > Geral > Visual > Cabeçalho > Descrição da Logo
 			$this->setConfig("header/logo_alt", $storeName , "design");
