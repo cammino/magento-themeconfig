@@ -281,6 +281,25 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	}
 
 	/**
+	* Retorna se o Fullbanner tem autoplay (default = ativado)
+	* @return string
+	*/
+	public function getFullbannersAutoplay() {
+		$enable = Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_fullbanners_autoplay');
+		return $enable == "0" ? 'false' : 'true';
+	}
+	
+	/**
+	* Retorna o tempo de transição entre as imagens do Fullbanner (default = 8 segs)
+	* @return int
+	*/
+	public function getFullbannersSpeed() {
+		$time = intval(Mage::getStoreConfig('themeconfig/themeconfig_group_banners/themeconfig_fullbanners_speed'));
+		$time = $time <= 2 ? 8 : $time;
+		return $time * 1000;
+	}
+
+	/**
 	* Retorna as informações do horário de atendimento da loja
 	* @return string
 	*/
@@ -296,6 +315,63 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	public function getProductImageTheme() {
 		$theme = Mage::getStoreConfig('themeconfig_design/product/image_theme');
 		return $theme != NULL && strlen($theme) > 4 ? $theme . '-theme' : "default-theme";
+	}
+
+	/**
+
+	* Pega as informações do Instagram Widget
+	* @return array com as informações (status, userid, token e title) cadastradas
+	*/
+	public function getInstagramInfos() {
+		return array(
+			"clientid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_clientid'),
+			"clientsecret" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_clientsecret'),
+			"status" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_force_update'),
+			"userid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_user'),
+			"token" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_token'),
+			"title" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_text')
+		);
+	}
+
+	/**
+	* Verifica se o widget de comentários para o produto no Facebook, está habilitado
+	* @return boolean se esta habilitado ou não
+	*/
+	public function hasFacebookComments() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_force_update'),
+			"title" => Mage::getStoreConfig('themeconfig/facebook_chat_widget/facebook_chat_text')
+		);
+	}
+
+	/**
+	* Verifica se o widget do Facebook Messenger, está habilitado
+	* @return boolean se esta habilitado ou não
+	*/
+	public function hasFacebookMessenger() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig/facebook_messenger_widget/facebook_messenger_force_update'),
+			"id" => Mage::getStoreConfig('themeconfig/facebook_messenger_widget/facebook_messenger_id'),
+			"message" => Mage::getStoreConfig('themeconfig/facebook_messenger_widget/facebook_messenger_greetings')
+		);
+	}
+	
+	/**
+	* Function responsible for returning the quantity of items per line
+	* @return string
+	*/
+	public function getProductListQtyItemsPerLine() {
+		$qty = intval(Mage::getStoreConfig('themeconfig_design/product_list/qty_per_line'));
+		return $qty == 0 || $qty == 1 ? 3 : $qty;
+	}
+	
+	/**
+	* Function responsible for returning the quantity of items per line mobile
+	* @return string
+	*/
+	public function getProductListQtyItemsPerLineMobile() {
+		$qty = intval(Mage::getStoreConfig('themeconfig_design/product_list/qty_per_line_mobile'));
+		return $qty == 1 ? 1 : 2;
 	}
 
 	/**
@@ -450,17 +526,22 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			return false;
 		}
 	}
-	
+
 	/**
-	* Pega as informações do Instagram Widget
-	* @return array com as informações (status, userid, token e title) cadastradas
+	* Retorna a altura da imagem dos produtos nas listagem quando é o vertical theme
+	* @return int
 	*/
-	public function getInstagramInfos(){
-		return array(
-			"status" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_force_update'),
-			"userid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_user'),
-			"token" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_token'),
-			"title" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_text')
-		);
+	public function getProductImageVerticalThemeHeight() {
+		$height = intval(Mage::getStoreConfig('themeconfig_design/product_list/product_image_height_vertical_theme'));
+		return $height < 100 ? 600 : $height;
+	}
+
+	/** 
+	 * Retorna o tema selecionado para o header do projeto
+	 * @return string
+	 */
+	public function getHeaderModel() {
+		$theme = Mage::getStoreConfig('themeconfig_design/header_model/header_style');
+		return $theme != NULL && strlen($theme) > 4 ? $theme . '-header' : "default-header";
 	}
 }

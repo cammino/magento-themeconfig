@@ -440,6 +440,22 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </instagram_force_update>
+                        <!-- <instagram_clientid translate="label">
+                            <label>Client ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram_clientid>
+                        <instagram_clientsecret translate="label">
+                            <label>Client Secret</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram_clientsecret> -->
                         <instagram_user translate="label">
                             <label>ID do Usuário</label>
                             <frontend_type>text</frontend_type>
@@ -464,8 +480,93 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </instagram_text>
+                        <instagram_connect translate="button_label">
+                            <label></label>
+                            <button_label>Conectar</button_label>
+                            <frontend_model>themeconfig/adminhtml_system_config_form_button</frontend_model>
+                            <!-- <frontend_model>adminhtml/customer_system_config_validatevat</frontend_model> -->
+                            <!-- <source_model>themeconfig/source_instagram_connect</source_model> -->
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram_connect>
                     </fields>
                 </instagram_widget>
+            </groups>
+
+            <!-- Facebook Messenger Widget -->
+            <groups>
+                <facebook_messenger_widget translate="label" module="themeconfig">
+                    <label>Facebook Messenger (Widget)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <facebook_messenger_force_update translate="label">
+                            <label>Exibir o widget do Facebook Messenger</label>
+                            <comment>Se sim, a seção com messenger do facebook aparecerá no site.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_messenger_force_update>
+                        <facebook_messenger_id translate="label">
+                            <label>ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_messenger_id>
+                        <facebook_messenger_greetings translate="label">
+                            <label>Mensagem de boas vindas</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_messenger_greetings>
+                    </fields>
+                </facebook_messenger_widget>
+            </groups>
+
+            <!-- Facebook Chat Widget -->
+            <groups>
+                <facebook_chat_widget translate="label" module="themeconfig">
+                    <label>Facebook Caixa de Comentário - Widget</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <facebook_chat_force_update translate="label">
+                            <label>Exibir o widget de comentários do Facebook</label>
+                            <comment>Se sim, a seção com o box de comentários do facebook aparecerá na página do produto no site.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_chat_force_update>
+                        <facebook_chat_text translate="label">
+                            <label>Título da seção</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_chat_text>
+                    </fields>
+                </facebook_chat_widget>
             </groups>
 
             <groups>
@@ -649,7 +750,7 @@
                         <themeconfig_specific_groups_select translate="label">
                             <label>Permitir venda para os grupos</label>
                             <frontend_type>multiselect</frontend_type>
-                            <source_model>themeconfig/source_customer_groups</source_model> 
+                            <source_model>themeconfig/source_customer_groups</source_model>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -934,6 +1035,41 @@
             </groups>
         </themeconfig>
 
+        <themeconfig>
+            <groups>
+                    <themeconfig_group_banners translate="label" module="themeconfig">
+                        <label>Banner Principal</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>30</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+
+                        <fields>
+                            <themeconfig_fullbanners_autoplay translate="label">
+                                <label>Habilitar autoplay</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>0</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </themeconfig_fullbanners_autoplay>
+
+                            <themeconfig_fullbanners_speed translate="label">
+                                <label>Tempo de transição</label>
+                                <comment>Tempo em segundos (o autoplay deve estar ativo)</comment>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>25</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </themeconfig_fullbanners_speed>
+                        </fields>
+                    </themeconfig_group_banners>
+                </groups>
+            </themeconfig>
+
         <themeconfig_design module="themeconfig">
             <label>Design</label>
             <tab>themeconfig</tab>
@@ -944,7 +1080,7 @@
 
             <groups>
                 <product translate="label" module="themeconfig">
-                    <label>Produto</label>
+                    <label>Produto - Detalhe</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
@@ -966,8 +1102,8 @@
             </groups>
 
             <groups>
-                <header module="themeconfig">
-                    <label>Header</label>
+                <product_list module="themeconfig">
+                    <label>Produto - Listagem</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
@@ -975,19 +1111,60 @@
                     <show_in_store>1</show_in_store>
  
                     <fields>
-                        <header_theme translate="label">
-                            <label>Preset de design do header</label>
+                        <qty_per_line translate="label">
+                            <label>Qtd de items por linha (desktop)</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>themeconfig/source_design_theme_productimage</source_model>
+                            <source_model>themeconfig/source_design_theme_productlistqty</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </qty_per_line>
+                        <qty_per_line_mobile translate="label">
+                            <label>Qtd de items por linha (mobile)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>themeconfig/source_design_theme_productlistqtymobile</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </qty_per_line_mobile>
+                        <product_image_height_vertical_theme>
+                            <label>Altura da imagem (vertical theme)</label>
+                            <comment>Altura padrão: 600 (pixels)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_image_height_vertical_theme>
+                    </fields>
+                </product_list>
+            </groups>
+
+            <!-- Header (Modelo) -->
+            <groups>
+                <header_model module="themeconfig">
+                    <label>Header (Modelo)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <header_style translate="label">
+                            <label>Estilo do header (desktop)</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>themeconfig/source_design_theme_headermodel</source_model>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </header_theme>
+                        </header_style>
                     </fields>
-                </header>
+                </header_model>
             </groups>
-
         </themeconfig_design>
 
     </sections>
