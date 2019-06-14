@@ -546,4 +546,15 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$theme = Mage::getStoreConfig('themeconfig_design/header_model/header_style');
 		return $theme != NULL && strlen($theme) > 4 ? $theme . '-header' : "default-header";
 	}
+
+	/**
+	* Verifica se o link para o blog, está habilitado
+	* @return boolean se esta habilitado ou não
+	*/
+	public function getBlogLink() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig/themeconfig_blog/themeconfig_blog_force_update'),
+			"link" => Mage::getStoreConfig('themeconfig/themeconfig_blog/themeconfig_blog_link')
+		);
+	}
 }
