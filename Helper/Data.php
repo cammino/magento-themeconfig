@@ -557,4 +557,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"link" => Mage::getStoreConfig('themeconfig/themeconfig_blog/themeconfig_blog_link')
 		);
 	}
+
+	/**
+	* Retorna as informações do campo dgmaxid na sessão de trackings
+	* @return string
+	*/
+	public function getDgmaxId() {
+		$dgmaxId = Mage::getStoreConfig("themeconfig/themeconfig_group_scripts/themeconfig_dgmaxid");
+		return $dgmaxId;
+	}
 }
