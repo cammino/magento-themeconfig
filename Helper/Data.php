@@ -322,16 +322,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 
 	/**
 	* Pega as informações do Instagram Widget
-	* @return array com as informações (status, userid, token e title) cadastradas
+	* @return array com informações do instagram
 	*/
-	public function getInstagramInfos() {
+	public function getInstagramWidgetInfos() {
 		return array(
-			"clientid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_clientid'),
-			"clientsecret" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_clientsecret'),
-			"status" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_force_update'),
-			"userid" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_user'),
-			"token" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_token'),
-			"title" => Mage::getStoreConfig('themeconfig/instagram_widget/instagram_text')
+			"active" => Mage::getStoreConfig('themeconfig/instagram_widget/active'),
+			"user" => Mage::getStoreConfig('themeconfig/instagram_widget/user'),
+			"title" => Mage::getStoreConfig('themeconfig/instagram_widget/title')
 		);
 	}
 
