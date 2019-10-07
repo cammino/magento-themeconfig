@@ -619,6 +619,15 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_product_item_discount_label_after>
+                        <themeconfig_product_item_discount_threshold translate="label">
+                            <label>Flag de desconto - Threshold</label>
+                            <comment>Valor para decidir se vai arredondar a tag para cima ou para baixo, valor default: 0.15</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_product_item_discount_threshold>
                     </fields>
                 </themeconfig_group_product_item>
             </groups>

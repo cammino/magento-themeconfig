@@ -42,4 +42,11 @@
             </controller_action_predispatch_customer_account_login>
 		</events>
      </global>
+	 <default>
+		<themeconfig>
+			<themeconfig_group_product_item>
+				<themeconfig_product_item_discount_threshold>0.15</themeconfig_product_item_discount_threshold>            
+			</themeconfig_group_product_item>        
+		</themeconfig>
+    </default>
 </config>
