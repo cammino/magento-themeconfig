@@ -563,4 +563,15 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$dgmaxId = Mage::getStoreConfig("themeconfig/themeconfig_group_scripts/themeconfig_dgmaxid");
 		return $dgmaxId;
 	}
+
+	/**
+	* Verifica se o cálculo de frete via geolocalização, está habilitado
+	* @return boolean se esta habilitado ou não
+	*/
+	public function getGeolocation() {
+		return array(
+			"enable" => Mage::getStoreConfig('themeconfig/themeconfig_geolocation/themeconfig_geolocation_enable'),
+			"api_key" => Mage::getStoreConfig('themeconfig/themeconfig_geolocation/themeconfig_geolocation_api_key')
+		);
+	}
 }
