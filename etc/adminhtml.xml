@@ -7,6 +7,10 @@
                         <children>
                             <config>
                                 <children>
+                                    <themeconfig_versionamento translate="title" module="themeconfig">
+                                        <title>themeconfig</title>
+                                        <sort_order>998</sort_order>
+                                    </themeconfig_versionamento>
                                     <themeconfig translate="title" module="themeconfig">
                                         <title>themeconfig</title>
                                         <sort_order>999</sort_order>

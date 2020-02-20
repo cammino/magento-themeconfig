@@ -10,7 +10,7 @@
         <themeconfig translate="label" module="themeconfig">
             <label>Geral</label>
             <tab>themeconfig</tab>
-            <sort_order>1000</sort_order>
+            <sort_order>2000</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
@@ -1240,6 +1240,280 @@
                 </header_model>
             </groups>
         </themeconfig_design>
+
+        <themeconfig_versionamento module="themeconfig">
+            <label>Versão</label>
+            <tab>themeconfig</tab>
+            <sort_order>3000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <themeconfig_store_versionamento translate="label" module="themeconfig">
+                    <label>Controle de versão dos módulos</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <themeconfig_store_version translate="label">
+                            <label>Loja Base</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_store_version>
+
+                        <themeconfig_themeconfig_version translate="label">
+                            <label>Themeconfig</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_themeconfig_version>
+
+                        <themeconfig_widgets_version translate="label">
+                            <label>Widgets</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_widgets_version>
+
+                        <themeconfig_local_version translate="label">
+                            <label>Local</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_local_version>
+
+                        <themeconfig_design_version translate="label">
+                            <label>Design</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_design_version>
+
+                        <themeconfig_skinadmin_version translate="label">
+                            <label>Skin/Admin</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_skinadmin_version>
+
+                        <themeconfig_skindefault_version translate="label">
+                            <label>Skin/Default</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_skindefault_version>
+
+                        <themeconfig_skinsample_version translate="label">
+                            <label>Skin/Sample</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_skinsample_version>
+
+                        <themeconfig_smtppro_version translate="label">
+                            <label>SMTP Pro</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_smtppro_version>
+
+                        <themeconfig_apijson_version translate="label">
+                            <label>APIJson</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_apijson_version>
+
+                        <themeconfig_banners_version translate="label">
+                            <label>Banners</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_banners_version>
+
+                        <themeconfig_billetdiscount_version translate="label">
+                            <label>Billetdiscount</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_billetdiscount_version>
+
+                        <themeconfig_billetremember_version translate="label">
+                            <label>Billteremember</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_billetremember_version>
+
+                        <themeconfig_cacheavoid_version translate="label">
+                            <label>Cacheavoid</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_cacheavoid_version>
+
+                        <themeconfig_cartreset_version translate="label">
+                            <label>Cartreset</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_cartreset_version>
+
+                        <themeconfig_checkoutsubscriber_version translate="label">
+                            <label>Checkoutsubscriber</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_checkoutsubscriber_version>
+
+                        <themeconfig_customsearch_version translate="label">
+                            <label>Customsearch</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>17</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_customsearch_version>
+
+                        <themeconfig_fbpixel_version translate="label">
+                            <label>Fbpixel</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_fbpixel_version>
+
+                        <themeconfig_googleanalytics_version translate="label">
+                            <label>Googleanalytics</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_googleanalytics_version>
+
+                        <themeconfig_googlemerchant_version translate="label">
+                            <label>Googlemerchant</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_googlemerchant_version>
+
+                        <themeconfig_installments_version translate="label">
+                            <label>Installments</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_installments_version>
+
+                        <themeconfig_loyalty_version translate="label">
+                            <label>Loyalty</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_loyalty_version>
+
+                        <themeconfig_mailchimp_version translate="label">
+                            <label>Mailchimp</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>23</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_mailchimp_version>
+
+                        <themeconfig_newsletterajax_version translate="label">
+                            <label>Newsletterajax</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>24</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_newsletterajax_version>
+
+                        <themeconfig_ordernotification_version translate="label">
+                            <label>Ordernotification</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_ordernotification_version>
+
+                        <themeconfig_prelogin_version translate="label">
+                            <label>Prelogin</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>26</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_prelogin_version>
+
+                        <themeconfig_shipping_version translate="label">
+                            <label>Shipping</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>27</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_shipping_version>
+
+                        <themeconfig_gokeeptracking_version translate="label">
+                            <label>Gokeep/Tracking</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_gokeeptracking_version>
+                    </fields>
+                </themeconfig_store_versionamento>
+            </groups>
+        </themeconfig_versionamento>
 
     </sections>
 </config>

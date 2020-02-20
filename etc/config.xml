@@ -46,7 +46,39 @@
 		<themeconfig>
 			<themeconfig_group_product_item>
 				<themeconfig_product_item_discount_threshold>0.15</themeconfig_product_item_discount_threshold>            
-			</themeconfig_group_product_item>        
+			</themeconfig_group_product_item>
 		</themeconfig>
+		<themeconfig_versionamento>
+			<themeconfig_store_versionamento>
+				<themeconfig_store_version>1.2.0</themeconfig_store_version>
+				<themeconfig_themeconfig_version>1.2.0</themeconfig_themeconfig_version>
+				<themeconfig_widgets_version>1.0.1</themeconfig_widgets_version>
+				<themeconfig_local_version>1.1.0</themeconfig_local_version>
+				<themeconfig_design_version>2.1.0</themeconfig_design_version>
+				<themeconfig_skinadmin_version>1.0.0</themeconfig_skinadmin_version>
+				<themeconfig_skindefault_version>2.1.0</themeconfig_skindefault_version>
+				<themeconfig_skinsample_version>1.0.0</themeconfig_skinsample_version>
+				<themeconfig_smtppro_version>1.0.0</themeconfig_smtppro_version>
+				<themeconfig_apijson_version>1.0.0</themeconfig_apijson_version>
+				<themeconfig_banners_version>1.1.0</themeconfig_banners_version>
+				<themeconfig_billetdiscount_version>1.0.0</themeconfig_billetdiscount_version>
+				<themeconfig_billetremember_version>1.1.0</themeconfig_billetremember_version>
+				<themeconfig_cacheavoid_version>1.0.0</themeconfig_cacheavoid_version>
+				<themeconfig_cartreset_version>1.0.0</themeconfig_cartreset_version>
+				<themeconfig_checkoutsubscriber_version>1.0.0</themeconfig_checkoutsubscriber_version>
+				<themeconfig_customsearch_version>1.0.0</themeconfig_customsearch_version>
+				<themeconfig_fbpixel_version>1.0.0</themeconfig_fbpixel_version>
+				<themeconfig_googleanalytics_version>1.0.0</themeconfig_googleanalytics_version>
+				<themeconfig_googlemerchant_version>1.2.0</themeconfig_googlemerchant_version>
+				<themeconfig_installments_version>1.0.0</themeconfig_installments_version>
+				<themeconfig_mailchimp_version>1.0.0</themeconfig_mailchimp_version>
+				<themeconfig_newsletterajax_version>1.0.0</themeconfig_newsletterajax_version>
+				<themeconfig_ordernotification_version>1.0.0</themeconfig_ordernotification_version>
+				<themeconfig_prelogin_version>1.0.0</themeconfig_prelogin_version>
+				<themeconfig_shipping_version>1.0.0</themeconfig_shipping_version>
+				<themeconfig_shippingestimate_version>1.0.1</themeconfig_shippingestimate_version>
+				<themeconfig_gokeeptracking_version>1.0.1</themeconfig_gokeeptracking_version>
+			</themeconfig_store_versionamento>       
+		</themeconfig_versionamento>
     </default>
 </config>
