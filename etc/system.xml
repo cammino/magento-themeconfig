@@ -588,6 +588,24 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </themeconfig_attributes_tab>
+                        <themeconfig_product_view_image_width translate="label">
+                            <label>Redimensionamento de imagens na tela de visualização</label>
+                            <comment>Tamanho da largura que a imagem deve ser redimensionada na tela de visualização. Em píxels.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_product_view_image_width>
+                        <themeconfig_product_view_zoom_image_width translate="label">
+                            <label>Redimensionamento de imagens de zoom na tela de visualização</label>
+                            <comment>Tamanho da largura que a imagem de zoom deve ser redimensionada na tela de visualização. Em píxels.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_product_view_zoom_image_width>
                     </fields>
                 </themeconfig_group_product>
             </groups>
