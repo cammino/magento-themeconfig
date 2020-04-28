@@ -574,4 +574,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"api_key" => Mage::getStoreConfig('themeconfig/themeconfig_geolocation/themeconfig_geolocation_api_key')
 		);
 	}
+
+	/**
+	* Verifica se o efeito de hover está habilidade para os produtos da listagem
+	* @return boolean
+	*/
+	public function getProductListHover() {
+		$enable = Mage::getStoreConfig('themeconfig_design/product_list/product_list_hover');
+		return $enable == "0" ? 'false' : 'true';
+	}
 }
