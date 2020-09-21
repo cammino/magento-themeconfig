@@ -19,6 +19,10 @@
                                         <title>themeconfig</title>
                                         <sort_order>1000</sort_order>
                                     </themeconfig_design>
+                                    <themeconfig_lgpd module="themeconfig">
+                                        <title>themeconfig</title>
+                                        <sort_order>2000</sort_order>
+                                    </themeconfig_lgpd>
                                 </children>
                             </config>
                         </children>

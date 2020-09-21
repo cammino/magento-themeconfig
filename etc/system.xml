@@ -1269,10 +1269,70 @@
             </groups>
         </themeconfig_design>
 
+        <themeconfig_lgpd module="themeconfig">
+            <label>LGPD</label>
+            <tab>themeconfig</tab>
+            <sort_order>3000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <themeconfig_lgpd_fields translate="label" module="themeconfig">
+                    <label>Alerta de Cookies</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <lgpd_cookie_alert_active translate="label">
+                            <label>Ativar o alerta de Cookies?</label>
+                            <comment>Se sim, o alerta será exibido na parte inferior da loja.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lgpd_cookie_alert_active>
+                        <lgpd_cookie_alert_message translate="label">
+                            <label>Mensagem</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lgpd_cookie_alert_message>
+                        <lgpd_cookie_alert_button translate="label">
+                            <label>Texto do botão</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lgpd_cookie_alert_button>
+                        <lgpd_cookie_alert_expiration_time translate="label">
+                            <label>Tempo de expiração</label>
+                            <comment>Valor em dias.</comment>
+                            <tab>phone</tab>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>validate-number</validate>
+                        </lgpd_cookie_alert_expiration_time>
+                    </fields>
+                </themeconfig_lgpd_fields>
+            </groups>
+        </themeconfig_lgpd>
+
         <themeconfig_versionamento module="themeconfig">
             <label>Versão</label>
             <tab>themeconfig</tab>
-            <sort_order>3000</sort_order>
+            <sort_order>4000</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>

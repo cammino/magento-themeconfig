@@ -583,4 +583,16 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$enable = Mage::getStoreConfig('themeconfig_design/product_list/product_list_hover');
 		return $enable == "0" ? 'false' : 'true';
 	}
+
+	/**
+	* Verifica se o alerte de cookies (LGPD) está habilitado ou não
+	*/
+	public function hasAlertCookieLGPD() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_fields/lgpd_cookie_alert_active'),
+			"message" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_fields/lgpd_cookie_alert_message'),
+			"button" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_fields/lgpd_cookie_alert_button'),
+			"time" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_fields/lgpd_cookie_alert_expiration_time')
+		);
+	}
 }
