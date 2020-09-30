@@ -595,4 +595,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"time" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_fields/lgpd_cookie_alert_expiration_time')
 		);
 	}
+
+	/**
+	* Veririca se o Shippingestimate (Frete na página do produto) irá considerar possíveis descontos ao valor
+	*/
+	public function hasShippingEstimateDiscount() {
+		return array(
+			"enable" => Mage::getStoreConfig('themeconfig/themeconfig_discount_shipping/themeconfig_discount_shipping_enable')
+		);
+	}
 }
