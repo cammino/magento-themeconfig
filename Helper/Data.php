@@ -246,14 +246,16 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		$groupsArray = Mage::getModel('customer/group')
         ->getCollection()
         ->load()
-        ->toArray();
- 
+		->toArray();
+
         foreach ($groupsArray['items'] as $groupId => $group) {
         	if (isset($group['customer_group_id'])) {
-                
-                $groupName = $group['customer_group_code'];
+				$groupName = $group['customer_group_code'];
+				$groudNewId = $group["customer_group_id"];
+
                 $groups[] = array(
-                    'value' => $groupId,
+					// 'value' => $groupId,
+					'value' => $groudNewId,
                     'label' => $groupName
                 );
             }
