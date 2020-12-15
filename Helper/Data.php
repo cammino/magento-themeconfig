@@ -388,7 +388,7 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 				$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_minval');
 				$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_ceps');
 
-				if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
+				if ( strlen($area) > 2 && strlen($minval) >= 2 && strlen($ceps) > 8) {
 					$freteOptions[] = array(
 						'status' => $status,
 						'area' => $area,
