@@ -606,4 +606,14 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"enable" => Mage::getStoreConfig('themeconfig/themeconfig_discount_shipping/themeconfig_discount_shipping_enable')
 		);
 	}
+
+	/**
+	* Verifica as opções referentes à tela de cadastro de cliente
+	*/
+	public function checkNewUserFormFields() {
+		return array(
+			"person_type" => Mage::getStoreConfig('themeconfig_design/new_customer/new_customer_person_type'),
+			"address_infos" => Mage::getStoreConfig('themeconfig_design/new_customer/new_customer_address_info')
+		);
+	}
 }
