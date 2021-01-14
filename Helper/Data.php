@@ -547,6 +547,15 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	}
 
 	/**
+	 * Verifica se o menu de navegalão está configurado para esconder ao scrollar a tela
+	 * @return boolean
+	 */
+	public function getHideableMenu() {
+		$enable = Mage::getStoreConfig('themeconfig_design/header_model/hideable_menu');
+		return $enable == "0" ? 'false' : 'true';		
+	}
+
+	/**
 	* Verifica se o link para o blog, está habilitado
 	* @return boolean se esta habilitado ou não
 	*/
