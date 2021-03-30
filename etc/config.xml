@@ -53,5 +53,12 @@
 				<themeconfig_store_version>1.2.0</themeconfig_store_version>
 			</themeconfig_store_versionamento>       
 		</themeconfig_versionamento>
+		<themeconfig_design>
+			<success_page>
+				<success_page_order_received>1</success_page_order_received>
+				<success_page_order_track>1</success_page_order_track>
+				<success_page_order_shipping>1</success_page_order_shipping>
+			</success_page>
+		</themeconfig_design>
     </default>
 </config>

@@ -625,4 +625,31 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"address_infos" => Mage::getStoreConfig('themeconfig_design/new_customer/new_customer_address_info')
 		);
 	}
+
+	/**
+	* Verifica as informações referentes ao bloco "Página de sucesso"
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function successPage(){
+		// Order received block
+		$orderReceived = Mage::getStoreConfig('themeconfig_design/success_page/success_page_order_received');
+		$orderReceivedMessage = Mage::getStoreConfig('themeconfig_design/success_page/success_page_order_received_message');
+
+		// Track block
+		$orderTrack = Mage::getStoreConfig('themeconfig_design/success_page/success_page_order_track');
+		$orderTrackMessage = Mage::getStoreConfig('themeconfig_design/success_page/success_page_order_track_message');
+
+		// Shipping block
+		$orderShipping = Mage::getStoreConfig('themeconfig_design/success_page/success_page_order_shipping');
+		$orderShippingMessage = Mage::getStoreConfig('themeconfig_design/success_page/success_page_order_shipping_message');
+
+		return array(
+			"orderReceived" => $orderReceived,
+			"orderReceivedMessage" => $orderReceivedMessage,
+			"orderTrack" => $orderTrack,
+			"orderTrackMessage" => $orderTrackMessage,
+			"orderShipping" => $orderShipping,
+			"orderShippingMessage" => $orderShippingMessage
+		);
+	}
 }
