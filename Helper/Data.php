@@ -652,4 +652,14 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"orderShippingMessage" => $orderShippingMessage
 		);
 	}
+
+	/**
+	* Verifica se o aceite das Políticas de Privacidade na Newsltter está habilitado
+	*/
+	public function hasNewsletterAccept() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_newsletter_accept/lgpd_newsletter_accept_active'),
+			"message" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_newsletter_accept/lgpd_newsletter_accept_message'),
+		);
+	}
 }
