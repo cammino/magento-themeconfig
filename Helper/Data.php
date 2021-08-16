@@ -662,4 +662,14 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"message" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_newsletter_accept/lgpd_newsletter_accept_message'),
 		);
 	}
+
+	/**
+	* Verifica se o aceite das Políticas de Privacidade na Newsltter está habilitado
+	*/
+	public function hasCustomerRemoveContent() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_customer_remove_content/lgpd_customer_form_remove_content_active'),
+			"message" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_customer_remove_content/lgpd_customer_form_remove_content_message'),
+		);
+	}
 }

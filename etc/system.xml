@@ -1564,6 +1564,35 @@
                         </lgpd_customer_form_accept_message>
                     </fields>
                 </themeconfig_lgpd_customer_form_accept>
+                <themeconfig_lgpd_customer_remove_content translate="label" module="themeconfig">
+                    <label>Usuário - Exclusão de dados</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <lgpd_customer_form_remove_content_active translate="label">
+                            <label>Ativar a mensagem?</label>
+                            <comment>Se sim, será exigido uma mensagem na área do usuário informando sobre a exclusão de seus dados cadastrais.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lgpd_customer_form_remove_content_active>
+                        <lgpd_customer_form_remove_content_message translate="label">
+                            <label>Mensagem</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lgpd_customer_form_remove_content_message>
+                    </fields>
+                </themeconfig_lgpd_customer_remove_content>
             </groups>
         </themeconfig_lgpd>
 
