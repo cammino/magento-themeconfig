@@ -664,6 +664,16 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	}
 
 	/**
+	* Verifica se o aceite das Políticas de Privacidade no Cadastro de Cliente está habilitado
+	*/
+	public function hasCustomerAccept() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_customer_form_accept/lgpd_customer_form_accept_active'),
+			"message" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_customer_form_accept/lgpd_customer_form_accept_message'),
+		);
+	}
+
+	/**
 	* Verifica se o aceite das Políticas de Privacidade na Newsltter está habilitado
 	*/
 	public function hasCustomerRemoveContent() {
