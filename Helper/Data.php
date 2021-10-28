@@ -692,4 +692,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"message" => Mage::getStoreConfig('themeconfig_lgpd/themeconfig_lgpd_checkout_accept/lgpd_customer_checkout_accept_message'),
 		);
 	}
+
+	/**
+	* Verifica se o aceite das Políticas de Privacidade no checkout está habilitado
+	*/
+	public function getThemeVersion() {
+		return array(
+			"theme" => Mage::getStoreConfig('themeconfig_design/theme_version/theme_color'),
+		);
+	}
 }
