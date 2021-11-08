@@ -387,8 +387,6 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 				$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_area');
 				$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_minval');
 				$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_ceps');
-
-				if ( strlen($area) > 2 && strlen($minval) >= 2 && strlen($ceps) > 8) {
 					$freteOptions[] = array(
 						'status' => $status,
 						'area' => $area,
@@ -396,7 +394,6 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 						'halfval' => $minval / 2,
 						'ceps' => $ceps
 					);
-				}
 			}			
 		}
 		
@@ -414,14 +411,11 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_area');
 			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_minval');
 			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete1_ceps');
-
-			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
-				return array(
-					"area" => $area,
-					"minval" => $minval,
-					"ceps" => $ceps,
-				);
-			}
+			return array(
+				"area" => $area,
+				"minval" => $minval,
+				"ceps" => $ceps,
+			);
 		}
 		else {
 			return false;
@@ -439,14 +433,11 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_area');
 			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_minval');
 			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete2_ceps');
-
-			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
-				return array(
-					"area" => $area,
-					"minval" => $minval,
-					"ceps" => $ceps,
-				);
-			}
+			return array(
+				"area" => $area,
+				"minval" => $minval,
+				"ceps" => $ceps,
+			);
 		}
 		else {
 			return false;
@@ -464,14 +455,11 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_area');
 			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_minval');
 			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete3_ceps');
-
-			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
-				return array(
-					"area" => $area,
-					"minval" => $minval,
-					"ceps" => $ceps,
-				);
-			}
+			return array(
+				"area" => $area,
+				"minval" => $minval,
+				"ceps" => $ceps,
+			);
 		}
 		else {
 			return false;
@@ -489,14 +477,11 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_area');
 			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_minval');
 			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete4_ceps');
-
-			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
-				return array(
-					"area" => $area,
-					"minval" => $minval,
-					"ceps" => $ceps,
-				);
-			}
+			return array(
+				"area" => $area,
+				"minval" => $minval,
+				"ceps" => $ceps,
+			);
 		}
 		else {
 			return false;
@@ -514,14 +499,11 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			$area = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_area');
 			$minval = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_minval');
 			$ceps = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete5_ceps');
-
-			if ( strlen($area) > 2 && strlen($minval) > 2 && strlen($ceps) > 8) {	
-				return array(
-					"area" => $area,
-					"minval" => $minval,
-					"ceps" => $ceps,
-				);
-			}
+			return array(
+				"area" => $area,
+				"minval" => $minval,
+				"ceps" => $ceps,
+			);
 		}
 		else {
 			return false;
