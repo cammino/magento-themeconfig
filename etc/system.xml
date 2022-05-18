@@ -401,11 +401,29 @@
                         <linkedin translate="label">
                             <label>Link para Linkedin</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>28</sort_order>
+                            <sort_order>29</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </linkedin>
+
+                        <pinterest translate="label">
+                            <label>Link para Pinterest</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pinterest>
+
+                        <tiktok translate="label">
+                            <label>Link para Tik Tok</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tiktok>
 
                     </fields>
 

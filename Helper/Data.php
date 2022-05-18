@@ -95,6 +95,8 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 		if($this->hasTwitter()): $medias[] = $this->getTwitter(); endif;
 		if($this->hasYoutube()): $medias[] = $this->getYoutube(); endif;
 		if($this->hasLinkedin()): $medias[] = $this->getLinkedin(); endif;
+		if($this->hasPinterest()): $medias[] = $this->getPinterest(); endif;
+		if($this->hasTikTok()): $medias[] = $this->getTikTok(); endif;
 		return $medias;
 	}
 
@@ -159,6 +161,30 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	}
 
 	/**
+	* Pega as informações do Pinterest
+	* @return array com as informações (url, slug, label) cadastradas do Pinterest
+	*/
+	public function getPinterest(){
+		return array(
+			"url" => Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/pinterest'),
+			"slug" => "pinterest",
+			"label" => "Pinterest",
+		);
+	}
+
+	/**
+	* Pega as informações do Tik Tok
+	* @return array com as informações (url, slug, label) cadastradas do Tiktok
+	*/
+	public function getTikTok(){
+		return array(
+			"url" => Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/tiktok'),
+			"slug" => "tiktok",
+			"label" => "Tik Tok",
+		);
+	}
+
+	/**
 	* Verifica se tem informações do Facebook cadastradas na loja
 	* @return boolean se esta cadastrado ou não
 	*/
@@ -201,6 +227,24 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	public function hasLinkedin(){
 		$linkedin = Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/linkedin');
 		return strlen($linkedin) > 3;
+	}
+
+	/**
+	* Verifica se tem informações do Pinterest cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasPinterest(){
+		$pinterest = Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/pinterest');
+		return strlen($pinterest) > 3;
+	}
+
+	/**
+	* Verifica se tem informações do Tik Tok cadastradas na loja
+	* @return boolean se esta cadastrado ou não
+	*/
+	public function hasTikTok(){
+		$tiktok = Mage::getStoreConfig('themeconfig/themeconfig_group_social_media/tiktok');
+		return strlen($tiktok) > 3;
 	}
 
 
