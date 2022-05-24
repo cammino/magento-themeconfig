@@ -627,6 +627,28 @@
                     </fields>
                 </themeconfig_group_product>
             </groups>
+            <groups>
+                <themeconfig_group_cart translate="label" module="themeconfig">
+                    <label>Carrinho</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4500</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <themeconfig_cart_discount_text translate="label">
+                            <label>Texto de preço promocional (boleto ou pix)</label>
+                            <comment>Para aparecer o texto é necessário configurar o id da regra de desconto do boleto ou do pix. O texto é o mesmo para ambas as situações.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeconfig_cart_discount_text>
+                    </fields>
+                </themeconfig_group_cart>
+            </groups>
 
             <groups>
                 <themeconfig_group_product_item translate="label" module="themeconfig">
