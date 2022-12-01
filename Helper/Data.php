@@ -736,4 +736,13 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 			"status" => Mage::getStoreConfig('themeconfig_design/product_list/infinite_scroll_type'),
 		);
 	}
+
+	/**
+	* Verifica qual versão com paginação ou infinite scroll será habilitada nas listagens de produtos
+	*/
+	public function getPaginationType() {
+		return array(
+			"status" => Mage::getStoreConfig('themeconfig_design/product_list/pagination_type'),
+		);
+	}
 }
