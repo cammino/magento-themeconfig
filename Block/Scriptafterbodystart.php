@@ -34,7 +34,15 @@ class Cammino_Themeconfig_Block_Scriptafterbodystart extends Mage_Core_Block_Tem
 					$text = 'Olá, gostaria de algumas informações!';
 				}
 
-				return '<a href="https://api.whatsapp.com/send?l=pt_br&phone=55' . $phone . '&text=' . $text . '" target="_blank" class="whatsapp-widget"><img src="' . $icone . '" alt="Ícone do Whatsapp"></a>';
+				//return '<a href="https://api.whatsapp.com/send?l=pt_br&phone=55' . $phone . '&text=' . $text . '" target="_blank" class="whatsapp-widget"><img src="' . $icone . '" alt="Ícone do Whatsapp"></a>';
+
+				$phone = str_replace('(', '', $phone);
+				$phone = str_replace(')', '', $phone);
+				$phone = str_replace(' ', '', $phone);
+				$phone = str_replace('+', '', $phone);
+				$phone = str_replace('-', '', $phone);
+
+				return '<a href="https://wa.me/55'. $phone .'?text=' . $text . '" target="_blank" class="whatsapp-widget"><img src="' . $icone . '" alt="Ícone do Whatsapp"></a>';
 			}
 			else {
 				return "";
