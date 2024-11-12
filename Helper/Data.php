@@ -424,7 +424,7 @@ class Cammino_Themeconfig_Helper_Data extends Mage_Core_Helper_Abstract {
 	* @return boolean se esta cadastrado ou não
 	*/
 	public function hasFreteGratis(){
-		for ($i = 1; $i <= 5; $i++) {
+		for ($i = 1; $i <= 7; $i++) {
 			$status = Mage::getStoreConfig('themeconfig/themeconfig_group_frete/frete' . $i . '_active');	
 
 			if ( $status == 1 || $status == '1' ) {		
