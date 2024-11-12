@@ -1108,6 +1108,90 @@
                             <depends><frete5_active>1</frete5_active></depends>
                         </frete5_ceps>
                     </fields>
+                    <fields>
+                        <frete6_active translate="label">
+                            <label>Frete 6 - Habilitado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </frete6_active>
+
+                        <frete6_area translate="label">
+                            <label>Frete 6 - Nome da área</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>61</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete6_active>1</frete6_active></depends>
+                        </frete6_area>
+
+                        <frete6_minval translate="label">
+                            <label>Frete 6 - Valor mínimo</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>62</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete6_active>1</frete6_active></depends>
+                        </frete6_minval>
+
+                        <frete6_ceps translate="label">
+                            <label>Frete 6 - Faixas de cep</label>
+                            <comment>Informe as faixas de cep, separando-as por vírgula.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>63</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete6_active>1</frete6_active></depends>
+                        </frete6_ceps>
+                    </fields>
+                    <fields>
+                        <frete7_active translate="label">
+                            <label>Frete 7 - Habilitado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </frete7_active>
+
+                        <frete7_area translate="label">
+                            <label>Frete 7 - Nome da área</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>71</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete7_active>1</frete7_active></depends>
+                        </frete7_area>
+
+                        <frete7_minval translate="label">
+                            <label>Frete 7 - Valor mínimo</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>72</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete7_active>1</frete7_active></depends>
+                        </frete7_minval>
+
+                        <frete7_ceps translate="label">
+                            <label>Frete 7 - Faixas de cep</label>
+                            <comment>Informe as faixas de cep, separando-as por vírgula.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>73</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete7_active>1</frete7_active></depends>
+                        </frete7_ceps>
+                    </fields>
                 </themeconfig_group_frete>
             </groups>
 
