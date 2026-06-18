@@ -42,6 +42,17 @@
             </controller_action_predispatch_customer_account_login>
 		</events>
      </global>
+	<frontend>
+		<routers>
+			<themeconfig>
+				<use>standard</use>
+				<args>
+					<module>Cammino_Themeconfig</module>
+					<frontName>themeconfig</frontName>
+				</args>
+			</themeconfig>
+		</routers>
+	</frontend>
 	 <default>
 		<themeconfig>
 			<themeconfig_group_product_item>
